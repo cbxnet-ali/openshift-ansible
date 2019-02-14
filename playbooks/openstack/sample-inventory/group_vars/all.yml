@@ -171,8 +171,8 @@ openshift_openstack_docker_volume_size: "15"
 ## Specify server group policies for master and infra nodes. Nova must be configured to
 ## enable these policies. 'anti-affinity' will ensure that each VM is launched on a
 ## different physical host.
-#openshift_openstack_master_server_group_policies: [anti-affinity]
-#openshift_openstack_infra_server_group_policies: [anti-affinity]
+#openshift_openstack_master_server_group_policies: "['anti-affinity']"
+#openshift_openstack_infra_server_group_policies: "['anti-affinity']"
 
 
 # The Classless Inter-Domain Routing (CIDR) for the OpenStack VM subnet.
